@@ -1,4 +1,4 @@
-# Pyeongtaek_OOOTeam
+# Pyeongtaek_AI_YOLO_Team
 Pyeongtaek_OOOTeam
 
 ## 평택대학교 OO팀 프로젝트
