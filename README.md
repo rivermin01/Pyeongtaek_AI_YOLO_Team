@@ -14,3 +14,10 @@ Pyeongtaek_OOOTeam
 ```
 YOLO를 활용한...
 ```
+
+
+
+
+git add .
+git commit -m "대충 어떤거 바꿨는지 요약"
+git push --set-upstream origin Develop
