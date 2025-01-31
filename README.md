@@ -12,7 +12,10 @@ Pyeongtaek_OOOTeam
 ```
 ## 설명
 ```
-YOLO를 활용한...
+아이디어 :
+1. 빙판길 감지
+2. cctv 인파 밀집 확인
+3. 주차 공간 밀집도 분석
 ```
 https://modulabs.co.kr/blog/git-and-github-for-beginners
 
