@@ -1,16 +1,15 @@
-# Pyeongtaek_OOOTeam
-Pyeongtaek_OOOTeam
+# Pyeongtaek_AI_YOLO_Team
+Pyeongtaek_AI_YOLO_Team
 
-## 평택대학교 OO팀 프로젝트
-```
-인파 밀집 시스템 개발
-```
+## 평택대학교 AI_YOLO팀 프로젝트
+
+최적의 응급 대피 경로
+
 ## 구성원
 ```
 팀장 :
-팀원 :
+팀원 : 최강민, 김병건, 이찬빈, 용석현, 신진수
 ```
 ## 설명
-```
-YOLO를 활용한...
-```
+
+화재등 응급 대피 상황이 발생하였을 때, 원활한 대피를 위해 cctv를 통해 인파 밀집도를 분석한 후, 한 곳으로 몰리지 않도록 대피 경로를 조정해 준다.
