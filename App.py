@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import cv2
 from flask import Flask, render_template, Response
-from Capture import generate_frame, get_status
+from Capture import generate_frame, get_status1, get_status2
 
 app = Flask(__name__)
 
@@ -15,7 +15,7 @@ def video_feed():
 @app.route('/road1')
 def home1():
     while True:
-        status = get_status()
+        status = get_status1()
         if status <= 2:
             return render_template('blue.html')
         elif status == 3:
@@ -27,7 +27,7 @@ def home1():
 @app.route('/road2')
 def home2():
     while True:
-        status = get_status()
+        status = get_status2()
         if status <= 2:
             return render_template('blue.html')
         elif status == 3:
