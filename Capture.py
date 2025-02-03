@@ -2,11 +2,11 @@ from ultralytics import solutions, YOLO
 import cv2
 from flask import Flask, Response
 
-# Flask 애플리케이션 초기화
-app = Flask(__name__)
-
 # YOLO 모델 로드
 model = YOLO("yolo11n.pt")
+
+status = 0
+
 
 
 # 비디오 스트리밍 함수 정의
@@ -25,18 +25,10 @@ def generate_frame():
         
         # 탐지된 객체의 수 추출
         detected_objects_count = len(results[0].boxes)  
+        global status
         status = detected_objects_count  
         
-        if detected_objects_count<=1:
-            status += " => 경로 사용 가능"
-            color = (255, 0, 0) # 블루
-        else:
-            status += " => 경로 사용 불가능"
-            color = (0, 0, 255) # 레드
-        
-        
-        
-        cv2.putText(annotated_frame, status, (10,30), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2)
+        cv2.putText(annotated_frame, f'Status: {status}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
         
         # 프레임을 JPEG 형식으로 인코딩
         _, buffer = cv2.imencode('.jpg', annotated_frame)
@@ -53,13 +45,7 @@ def generate_frame():
     
     cap.release()
     
-# Flask 라우트 정의
-@app.route('/video')
-def video_feed():
-    # 비디오 스트리밍 제공
-    return Response(generate_frame(), mimetype='multipart/x-mixed-replace; boundary=frame')
+def get_status():
+    return status
 
-# 애플리케이션 실행
-if __name__ == "__main__":
-    # Flask 서버를 실행
-    app.run(host="0.0.0.0", port=5001, debug=True)
+
