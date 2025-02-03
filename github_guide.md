@@ -24,6 +24,8 @@
 ## 누군가 업데이트 후
 1. git pull
 
+## 가상환경 
+conda create -n YOLO python==3.11.11
 
 ## 참고 문서
 https://modulabs.co.kr/blog/git-and-github-for-beginners
