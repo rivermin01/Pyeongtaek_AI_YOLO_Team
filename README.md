@@ -39,3 +39,5 @@ Pyeongtaek_AI_YOLO_Team
     # 10. ppt 자료 준비
     # 11. 깃허브 소스 코드 관리 
 https://modulabs.co.kr/blog/git-and-github-for-beginners
+
+git test
