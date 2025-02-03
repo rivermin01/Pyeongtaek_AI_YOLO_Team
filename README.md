@@ -1,5 +1,6 @@
 # Pyeongtaek_AI_YOLO_Team
 사용법
+깃허브
 
 # 깃허브 사용 방법
 
