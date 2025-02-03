@@ -13,14 +13,7 @@ Pyeongtaek_AI_YOLO_Team
 ## 설명
 ```
 아이디어 :
-1. 빙판길 감지
-2. cctv 인파 밀집 확인
-3. 주차 공간 밀집도 분석
-4. 지하철 승강장 밀집도 분석
-5. 응급 대피 경로 
-6. 우주 쓰레기 밀집도 분석
-7. 야생 동물 밀집도 분석
-8. 대형 행사(콘서트, 경기장) 인원 관리 시스템
+응급 대피 경로
 ```
 ## 깃허브 소스 코드 관리 및 프로젝트 설명
     # 팀원끼리 가상환경 통일(python version등)
@@ -37,5 +30,10 @@ Pyeongtaek_AI_YOLO_Team
     # 8. 웹 서비스
     # 9. 알람 설정
     # 10. ppt 자료 준비
+<<<<<<< HEAD
+    # 11. 깃허브 소스 코드 관리
+https://modulabs.co.kr/blog/git-and-github-for-beginners
+=======
     # 11. 깃허브 소스 코드 관리 
 https://modulabs.co.kr/blog/git-and-github-for-beginners
+>>>>>>> d5e96aad01b0c7558f572223cfa5c7de82ff0aa5
