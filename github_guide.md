@@ -26,7 +26,9 @@
 
 ## 가상환경 
 conda create -n YOLO python==3.11.11
+
 conda activate YOLO
+
 pip install ultralytics
 
 ## 참고 문서
