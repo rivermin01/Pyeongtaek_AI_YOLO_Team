@@ -3,15 +3,15 @@ import cv2
 from flask import Flask, Response
 
 # YOLO 모델 로드
-model = YOLO("yolo11n.pt")
+model = YOLO("model_train_1/trained_yolo11n.pt")
 
 status1 = 0
 status2 = 0
 
 # 비디오 스트리밍 함수 정의
 def generate_frame():
-    cap = cv2.VideoCapture("rtsp://yolo:yolo@192.168.16.92:8080/h264_ulaw.sdp")
-    
+    # cap = cv2.VideoCapture("rtsp://yolo:yolo@192.168.16.92:8080/h264_ulaw.sdp")
+    cap = cv2.VideoCapture(1)
     # 특정 좌표 설정
     region_points = {
         "Region#01": [(10,10), (500,10), (500, 700), (10, 700)],
@@ -22,7 +22,7 @@ def generate_frame():
     region = solutions.RegionCounter(
         show=True,
         region=region_points,
-        model='yolo11n.pt'
+        model='model_train_1/trained_yolo11n.pt'
     )
     
     
@@ -32,7 +32,9 @@ def generate_frame():
             print("프레임 확인")
             break
         
-        region_results, region_counts = region.count(im0)
+        region_results, region_counts, label_names = region.count(im0)
+        
+        
         
         # 탐지된 객체의 수 추출
         global status1
