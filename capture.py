@@ -10,7 +10,7 @@ status2 = 0
 
 # 비디오 스트리밍 함수 정의
 def generate_frame():
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     
     # 특정 좌표 설정
     region_points = {
