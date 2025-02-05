@@ -12,7 +12,8 @@ def generate_frame():
     # 특정 좌표 설정
     region_points = {
         "Region#01": [(0,0), (600,0), (600, 1080), (0, 1080)],
-        "Region#02": [(1250,0), (1920,0), (1920, 1080), (1250, 1080)]
+        "Region#02": [(1250,0), (1920,0), (1920, 1080), (1250, 1080)],
+        "Region#03": [(600,0), (1250,0), (1250, 1080), (600, 1080)]
     }
 
     # 구역 설정
@@ -33,10 +34,10 @@ def generate_frame():
         region_results, region_counts, label_names = region.count(im0)
         
         # 탐지된 객체의 수 추출
-        global status1
-        global status2
+        global status1, status2, status3
         status1 = region_counts.get("Region#01", 0)
         status2 = region_counts.get("Region#02", 0)
+        status3 = region_counts.get("Region#03", 0)
         
         # 프레임을 JPEG 형식으로 인코딩
         _, buffer = cv2.imencode('.jpg', region_results)
@@ -54,4 +55,6 @@ def get_status1():
     return status1
 def get_status2():
     return status2
+def get_status3():
+    return status3
 
