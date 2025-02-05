@@ -19,8 +19,8 @@ def generate_frame():
     region = solutions.RegionCounter(
         show=True,
         region=region_points,
-        model='model_train_1/trained_yolo11n.pt'                                # 맥용 경로
-        # model = 'Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt     # 윈도우용 경로
+       # model='model_train_1/trained_yolo11n.pt'                                # 맥용 경로
+        model = 'Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt'     # 윈도우용 경로
     )
     
     
