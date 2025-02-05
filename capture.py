@@ -1,10 +1,5 @@
 from ultralytics import solutions, YOLO
 import cv2
-from flask import Flask, Response
-
-# YOLO 모델 로드
-model = YOLO("model_train_1/trained_yolo11n.pt")    # 맥용 경로
-# model = YOLO("Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt")  # 윈도우용 경로
 
 status1 = 0
 status2 = 0
@@ -24,7 +19,8 @@ def generate_frame():
     region = solutions.RegionCounter(
         show=True,
         region=region_points,
-        model='model_train_1/trained_yolo11n.pt'
+        model='model_train_1/trained_yolo11n.pt'                                # 맥용 경로
+        # model = 'Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt     # 윈도우용 경로
     )
     
     

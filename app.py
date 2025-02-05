@@ -1,5 +1,3 @@
-from ultralytics import YOLO
-import cv2
 from flask import Flask, render_template, Response
 from capture import generate_frame, get_status1, get_status2
 
