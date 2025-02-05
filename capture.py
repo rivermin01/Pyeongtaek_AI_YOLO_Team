@@ -7,12 +7,12 @@ status2 = 0
 # 비디오 스트리밍 함수 정의
 def generate_frame():
     # cap = cv2.VideoCapture("rtsp://yolo:yolo@192.168.16.92:8080/h264_ulaw.sdp")
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     
     # 특정 좌표 설정
     region_points = {
-        "Region#01": [(10,10), (500,10), (500, 700), (10, 700)],
-        "Region#02": [(600,10), (1200,10), (1200, 700), (600, 700)]
+        "Region#01": [(0,0), (600,0), (600, 1080), (0, 1080)],
+        "Region#02": [(1250,0), (1920,0), (1920, 1080), (1250, 1080)]
     }
 
     # 구역 설정

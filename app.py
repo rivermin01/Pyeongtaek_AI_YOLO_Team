@@ -14,9 +14,9 @@ def video_feed():
 def home1():
     while True:
         status = get_status1()
-        if status <= 2:
+        if status <= 1:
             return render_template('blue.html')
-        elif status == 3:
+        elif status == 2:
             return render_template('yellow.html')
         else:
             return render_template('red.html')
@@ -26,9 +26,9 @@ def home1():
 def home2():
     while True:
         status = get_status2()
-        if status <= 2:
+        if status <= 1:
             return render_template('blue.html')
-        elif status == 3:
+        elif status == 2:
             return render_template('yellow.html')
         else:
             return render_template('red.html')
