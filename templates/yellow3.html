@@ -19,13 +19,13 @@
 </head>
 <body>
     <h1>2명 1명으로 나누어서 이동해주세요.</h1>
-    <audio id="alertSound" src="{{ url_for('static', filename='Ysound.mp3') }}" autoplay loop></audio>
+    <audio id="alertSound" src="{{ url_for('static', filename='y3.mp3') }}" autoplay loop></audio>
 </body>
 <script>
-    // 0.5초마다 페이지 새로고침
+    // 2초마다 페이지 새로고침
     setInterval(function() {
         window.location.reload();
-    }, 500);
+    }, 2000);
 
     window.onload = function() {
         var audio = document.getElementById('alertSound');
