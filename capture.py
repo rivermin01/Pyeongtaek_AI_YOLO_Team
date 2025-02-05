@@ -3,7 +3,8 @@ import cv2
 from flask import Flask, Response
 
 # YOLO 모델 로드
-model = YOLO("model_train_1/trained_yolo11n.pt")
+model = YOLO("model_train_1/trained_yolo11n.pt")    # 맥용 경로
+# model = YOLO("Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt")  # 윈도우용 경로
 
 status1 = 0
 status2 = 0
@@ -12,6 +13,7 @@ status2 = 0
 def generate_frame():
     # cap = cv2.VideoCapture("rtsp://yolo:yolo@192.168.16.92:8080/h264_ulaw.sdp")
     cap = cv2.VideoCapture(1)
+    
     # 특정 좌표 설정
     region_points = {
         "Region#01": [(10,10), (500,10), (500, 700), (10, 700)],
@@ -34,15 +36,12 @@ def generate_frame():
         
         region_results, region_counts, label_names = region.count(im0)
         
-        
-        
         # 탐지된 객체의 수 추출
         global status1
         global status2
         status1 = region_counts.get("Region#01", 0)
         status2 = region_counts.get("Region#02", 0)
-        print(status1)
-        print(status2)
+        
         # 프레임을 JPEG 형식으로 인코딩
         _, buffer = cv2.imencode('.jpg', region_results)
         # 인코딩된 이미지를 바이트 형태로 변환
