@@ -1,5 +1,5 @@
 from flask import Flask, render_template, Response
-from capture import generate_frame, get_status1, get_status2
+from capture import generate_frame, get_status1, get_status2, get_status3
 
 app = Flask(__name__)
 
@@ -32,6 +32,20 @@ def home2():
             return render_template('yellow.html')
         else:
             return render_template('red.html')
+        
+# 길 통제
+@app.route('/road3')
+def home3():
+    while True:
+        status = get_status3()
+        if status <= 2:
+            return render_template('blue.html')
+        elif status == 3:
+            return render_template('yellow3.html')
+        elif status == 4:
+            return render_template('yellow4.html')
+        else:
+            return render_template('red5.html')
 
 
 # 애플리케이션 실행
