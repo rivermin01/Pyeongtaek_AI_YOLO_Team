@@ -3,7 +3,7 @@ Pyeongtaek_AI_YOLO_Team
 
 ## 평택대학교 AI_YOLO팀 프로젝트
 ```
-인파 밀집 시스템 개발
+인파 밀집시 최적의 응급 대피 경로
 ```
 ## 구성원
 ```
@@ -12,28 +12,35 @@ Pyeongtaek_AI_YOLO_Team
 ```
 ## 설명
 ```
-아이디어 :
-인파 밀집 상황 응급 대피 경로
+화재등 응급 대피 상황이 발생하였을 때, 원활한 대피를 위해 cctv를 통해 인파 밀집도를 분석한 후, 한 곳으로 몰리지 않도록 대피 경로를 조정해 준다.
 ```
-## 깃허브 소스 코드 관리 및 프로젝트 설명
-    # 팀원끼리 가상환경 통일(python version등)
-    # 환경 셋팅 => requirements.txt 생성
+## 환경 셋팅
+The code requires python>=3.11.11 and we use Flask==3.1.0, ultralytics==8.3.66
+```
+Flask==3.1.0
+numpy==2.2.2
+opencv_python==4.11.0.86
+Pillow==11.1.0
+ultralytics==8.3.66
 
-## 프로젝트 예시
-    # 1. 데이터 수집
-    # 2. 데이터 라벨링
-    # 3. 데이터 전처리
-    # 4. 모델 학습
-    # 5. 모델 평가
-    # 6. 모델 적용
-    # 7. 인파 밀집 시스템 로직 구현
-    # 8. 웹 서비스
-    # 9. 알람 설정
-    # 10. ppt 자료 준비
-<<<<<<< HEAD
-    # 11. 깃허브 소스 코드 관리
-https://modulabs.co.kr/blog/git-and-github-for-beginners
-=======
-    # 11. 깃허브 소스 코드 관리 
-https://modulabs.co.kr/blog/git-and-github-for-beginners
->>>>>>> d5e96aad01b0c7558f572223cfa5c7de82ff0aa5
+```
+## 실행
+```
+1. 바탕화면 폴더 생성
+2. cmd 실행
+3. cd Desktop
+4. cd "생성한 폴더 이름"
+5. git clone https://github.com/rivermin01/Pyeongtaek_AI_YOLO_Team.git
+6. Visual Studio에서 파일 실행
+7. app.py 실행
+```
+## 참고 자료 1
+```
+인파 밀집시 안내 문구를 알려주기 위해 네이버 클로바더빙을 통해 AI로 보이스 생성
+```
+### 접근 방법
+```
+```
+### 예시 링크
+```
+```
