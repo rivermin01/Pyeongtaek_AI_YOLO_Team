@@ -26,17 +26,21 @@ ultralytics==8.3.66
 ```
 ## 실행
 ```
-1. 바탕화면 폴더 생성
-2. cmd 실행
-3. cd Desktop
-4. cd "생성한 폴더 이름"
-5. git clone https://github.com/rivermin01/Pyeongtaek_AI_YOLO_Team.git
-6. Visual Studio에서 파일 실행
-7. app.py 실행
+1. zip 파일 다운
+2. 압축 해제
+3. 경로 설정(cd Pyeongtaek_AI_YOLO_Team)
+4. 환경 셋팅
+5. Pyeongtaek_AI_YOLO_Team/count.txt내용을 site-packages/ultralytics/solutions/region.counter.py로 옮기기
+6. Pyeongtaek_AI_YOLO_Team/capture.py에서 Mac경로와 Window경로 확인하여 바꿔주기
+6. python3 app.py
 ```
 ## 참고 자료 1
 ```
-인파 밀집시 안내 문구를 알려주기 위해 네이버 클로바더빙을 통해 AI로 보이스 생성
+인파 밀집시 안내 문구를 알려주기 위해 Vrew 프로그램을 이용하여 AI로 보이스 생성
+```
+## 참고 자료 2
+```
+인파 밀집시 안내 문구를 알려주기 위해 Vrew 프로그램을 이용하여 AI로 보이스 생성
 ```
 ### 접근 방법
 ```
