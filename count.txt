@@ -121,4 +121,4 @@ class RegionCounter(BaseSolution):
             
 
         self.display_output(im0)
-        return im0, region_counts, label_name
+        return im0, region_counts
