@@ -15,6 +15,10 @@ https://docs.google.com/presentation/d/1R0Giq7XBQRNwJ5AYhc5hBxZcgEbBbyu7_C9yrymD
 
 ### 실행 순서
 
+
+![Image](https://github.com/user-attachments/assets/bbaebff5-4df8-4718-900d-2ab3f35aa85a)
+
+
 ![Image](https://github.com/user-attachments/assets/88080536-7386-47a0-a638-d182477d717f)
 
 ```
