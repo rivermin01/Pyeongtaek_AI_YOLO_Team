@@ -1,11 +1,12 @@
 # Pyeongtaek_AI_YOLO_Team
-Pyeongtaek_AI_YOLO_Team
+```
+```
 
-## 평택대학교 AI_YOLO팀 프로젝트
+# 평택대학교 AI_YOLO팀 프로젝트
 ```
 응급 상황 인파 밀집시 최적의 대피 경로
 ```
-## 구성원
+# 구성원
 ```
 팀장 : 최강민
 팀원 : 김병건, 이찬빈, 용석현, 신진수
