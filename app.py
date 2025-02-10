@@ -28,7 +28,7 @@ def home1():
         status = get_status1()          # 좌측 계단에 있는 사람의 수에 따라 각각 다른 HTML파일 불러오기
         if status <= 1:     # 1인 이하
             return render_template('blue.html')
-        elif status == 2:   # 1인 이하
+        elif status == 2:   # 2인 이하
             return render_template('yellow.html')
         else:               # 3인 이상
             return render_template('red.html')
@@ -40,7 +40,7 @@ def home2():
         status = get_status2()          # 우측 계단에 있는 사람의 수에 따라 각각 다른 HTML파일 불러오기
         if status <= 1:     # 1인 이하
             return render_template('blue.html')
-        elif status == 2:   # 1인 이하
+        elif status == 2:   # 2인 이하
             return render_template('yellow.html')
         else:               # 3인 이상
             return render_template('red.html')
