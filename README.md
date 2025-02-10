@@ -2,6 +2,9 @@
 ```
 응급 상황 인파 밀집시 최적의 대피 경로
 ```
+## 구글 슬라이드 프레젠테이션
+https://docs.google.com/presentation/d/1R0Giq7XBQRNwJ5AYhc5hBxZcgEbBbyu7_C9yrymDqfg/edit?usp=sharing
+
 ## 구성원
 ```
 팀장 : 최강민
