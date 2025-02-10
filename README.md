@@ -36,6 +36,25 @@
 ### 실시간 카메라 스트리밍 예시
 
 ### 각 구역의 상황 예시
+<img width="811" alt="Image" src="https://github.com/user-attachments/assets/66badfd0-0c98-413f-986f-3cb23a21d740" />
+```
+```
+<img width="811" alt="Image" src="https://github.com/user-attachments/assets/e79abec8-caed-43b1-a83f-27cd6ff30091" />
+```
+```
+<img width="810" alt="Image" src="https://github.com/user-attachments/assets/eccd9cab-7399-41d7-944d-23b98fa0c2a4" />
+```
+```
+<img width="812" alt="Image" src="https://github.com/user-attachments/assets/2e7d74db-b13d-4125-b58d-7881c984dd70" />
+```
+```
+<img width="807" alt="Image" src="https://github.com/user-attachments/assets/930bc5b8-c351-48ab-ab64-ba03fb5dc07f" />
+```
+```
+<img width="810" alt="Image" src="https://github.com/user-attachments/assets/6600b5f8-644f-49cf-af39-ed47b9a01dcf" />
+```
+```
+
 
 ## 환경 셋팅
 The code requires python>=3.11.11 and we use Flask==3.1.0, ultralytics==8.3.66
