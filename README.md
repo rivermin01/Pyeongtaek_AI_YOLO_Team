@@ -17,9 +17,9 @@ Pyeongtaek_AI_YOLO_Team
 ```
 
 ### 실행 순서
-```
+
 ![Image](https://github.com/user-attachments/assets/88080536-7386-47a0-a638-d182477d717f)
-```
+
 
 
 ### 구조
