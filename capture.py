@@ -4,7 +4,7 @@ import cv2
 # 비디오 스트리밍 함수 정의
 def generate_frame():
     # cap = cv2.VideoCapture("rtsp://yolo:yolo@192.168.16.92:8080/h264_ulaw.sdp")       # rtsp 카메라
-    cap = cv2.VideoCapture(0)       # 연결된 기본 카메라
+    cap = cv2.VideoCapture(0)       # 컴퓨터에 연결된 기본 카메라
     
     # 특정 좌표 설정
     region_points = {
@@ -17,19 +17,19 @@ def generate_frame():
     region = solutions.RegionCounter(
         show=True,
         region=region_points,
-        model = 'yolov8n-seg.pt'                        # 모델 변경
-        # model='model_train_1/trained_yolo11n.pt'                                # 맥용 경로
-        # model = 'Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt'     # 윈도우용 경로
+        model = 'yolov8n-seg.pt'                                                 # 현재 가장 정확한 모델
+        # model='model_train_1/trained_yolo11n.pt'                               # 학습시킨 맥용 경로
+        # model = 'Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt'     # 학습시킨 윈도우용 경로
     )
     
     
     while True:
         success, im0 = cap.read()
-        if not success:             # 카메라 오류
+        if not success:             # 카메라 오류 제어
             print("프레임 확인")
             break
         
-        region_results, region_counts = region.count(im0)      # region_counter.py의 코드를 count.txt의 텍스트로 변환 시 사용 가능
+        region_results, region_counts = region.count(im0)      # region_counter.py의 코드를 count.txt의 텍스트로 변환 후 사용 가능
         '''
         region_count는 딕셔너리 타입으로 각 구역에서 탐지된 객채의 수 추출
         '''

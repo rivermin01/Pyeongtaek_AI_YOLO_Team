@@ -97,8 +97,8 @@ class RegionCounter(BaseSolution):
 
         # Process bounding boxes and count objects within each region
         for box, cls in zip(self.boxes, self.clss):
-            label_name = self.names[cls]
-            if label_name == "person":
+            label_name = self.names[cls]                
+            if label_name == "person":      # 감지된 클래스 이름이 사람인 경우에만 출력
                 self.annotator.box_label(box, label=self.names[cls], color=colors(cls, True))
                 bbox_center = ((box[0] + box[2]) / 2, (box[1] + box[3]) / 2)
                 for region in self.counting_regions:
@@ -121,4 +121,4 @@ class RegionCounter(BaseSolution):
             
 
         self.display_output(im0)
-        return im0, region_counts
+        return im0, region_counts       # 프레임과 카운트 출력
