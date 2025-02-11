@@ -17,8 +17,8 @@ def generate_frame():
     region = solutions.RegionCounter(
         show=True,
         region=region_points,
-        model = 'yolov8n-seg.pt'                                                 # 현재 가장 정확한 모델
-        # model='model_train_1/trained_yolo11n.pt'                               # 학습시킨 맥용 경로
+        # model = 'yolov8n-seg.pt'                                                 # 현재 가장 정확한 모델
+        model='model_train_5/runs/detect/train2/weights/best.pt'                               # 학습시킨 맥용 경로
         # model = 'Pyeongtaek_AI_YOLO_Team/model_train_1/trained_yolo11n.pt'     # 학습시킨 윈도우용 경로
     )
     
