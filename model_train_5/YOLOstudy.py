@@ -2,6 +2,6 @@ from ultralytics import YOLO
 
 model = YOLO("yolov8n.pt")
 
-#print(model.model) # yolo 11 모델 확인
+#print(model.model) # yolo 8 모델 확인
 
 model.train(data = "./COCO8.yaml", epochs = 50, batch =16, imgsz = 640, freeze = 22)
