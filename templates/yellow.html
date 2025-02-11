@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 상황</title>
+    <style>
+        body {
+            background-color: #FFFF00; /* 연한 노란색 배경 */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>주의하여 통행 가능합니다.</h1>
+    <audio id="alertSound" src="{{ url_for('static', filename='Ysound.mp3') }}" autoplay loop></audio>
+</body>
+<script>
+    // 0.5초마다 페이지 새로고침
+    setInterval(function() {
+        window.location.reload();
+    }, 500);
+
+    window.onload = function() {
+        var audio = document.getElementById('alertSound');
+        audio.play();
+    };
+</script>
+</html>
