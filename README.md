@@ -47,6 +47,7 @@ https://docs.google.com/presentation/d/1R0Giq7XBQRNwJ5AYhc5hBxZcgEbBbyu7_C9yrymD
 
 <img width="811" alt="Image" src="https://github.com/user-attachments/assets/e79abec8-caed-43b1-a83f-27cd6ff30091" />
 
+
 ```
 경로에 2명이 있을 경우
 ```
