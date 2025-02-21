@@ -110,5 +110,5 @@ ultralytics==8.3.66
 ```
 ## 시연
 ```
-
+https://drive.google.com/file/d/1DWgOngd-7_hWjbyJo8aKKVSsCliCnLvK/view?usp=sharing
 ```
